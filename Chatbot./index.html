@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+      
+
+   <div class="ai-chat-box">
+<img src="aii.png" alt="aiImage" id="aiImage" width="7%">
+<div class="ai-chat-area">
+   Hello , I'm an AI assistant. How can I help you today?
+</div>
+
+
+   </div>
+    </div>
+
+    <div class="history-modal" id="historyModal">
+        <div class="history-content">
+            <span class="close-btn">&times;</span>
+            <h2>Chat History</h2>
+            <div class="history-list" id="historyList">
+                <!-- History items will be added here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-area">
+        <input type="text" id="prompt" placeholder="Message...">
+        <button id="image">
+            <img src="img.svg" alt="">
+            <input type="file" accept="images/*" hidden>
+        </button>
+        <button id="history-btn">
+            <img src="history-svgrepo-com.svg" alt="History">
+        </button>
+        <button id="submit">
+            <img src="subm.svg" alt="">
+        </button>
+        <button id="virtual-assistant-btn" title="Go to Virtual Assistant">
+            <img src="user.png" alt="Virtual Assistant">
+        </button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('virtual-assistant-btn').addEventListener('click', function() {
+            window.location.href = '../Virtual-Assistant-main/index.html';
+        });
+    </script>
+</body>
+</html>
